@@ -10,7 +10,7 @@ spring:
   profiles: dev
 
 token:
-  secret: user_token_dev
+  secret: user_token_dev_rabbitmq_test
   
 ---
 
