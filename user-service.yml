@@ -1,0 +1,27 @@
+gateway:
+  ip: 192.168.1.39
+token:
+  expiration_time: 86400000
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/ecommerce?serverTimezone=Asia/Seoul
+    username: root
+    password: '{cipher}6ec5e4eee84830c2939559d48c87570ac75d00be3c0196121a725fd5c4ef829b'
+  
+
+---
+
+spring:
+  profiles: dev
+
+token:
+  secret: user_token_dev_rabbitmq_test
+  
+---
+
+spring:
+  profiles: prod
+  
+token:
+  secret: user_token_prod
