@@ -1,0 +1,18 @@
+spring:
+  profiles: dev
+
+token:
+  expiration_time: 86400000
+  secret: user_token_dev
+  
+gateway:
+  ip: 192.168.1.39
+  
+  
+---
+
+spring:
+  profiles: prod
+  
+token:
+  secret: user_token_prod
