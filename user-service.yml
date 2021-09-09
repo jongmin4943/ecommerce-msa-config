@@ -18,6 +18,9 @@ spring:
 token:
   secret: user_token_dev_rabbitmq_test
   
+order_service:
+  url: http://127.0.0.1:8000/order-service/%s/orders
+  
 ---
 
 spring:
