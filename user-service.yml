@@ -5,7 +5,7 @@ token:
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/ecommerce?serverTimezone=Asia/Seoul
+    url: jdbc:mariadb://mariadb:3306/ecommerce?serverTimezone=Asia/Seoul
     username: root
     password: '{cipher}6ec5e4eee84830c2939559d48c87570ac75d00be3c0196121a725fd5c4ef829b'
   
